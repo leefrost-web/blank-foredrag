@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foredrag og kurs — Blank</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'BlankFraktur';
+      src: url('/fonts/BlankFraktur-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
       --color-bg: #272D2A;
       --color-text: #FFFCB6;
@@ -15,7 +23,7 @@
       --color-coral: #f4776a;
       --color-blue: #66A8CC;
       --color-border: rgba(255, 252, 182, 0.15);
-      --font-display: 'UnifrakturMaguntia', Georgia, serif;
+      --font-display: 'BlankFraktur', Georgia, serif;
       --font-body: 'Work Sans', Helvetica, Arial, sans-serif;
     }
 
@@ -50,14 +58,14 @@
     }
 
     .nav__logo {
-      font-family: var(--font-body);
-      font-size: 1rem;
-      font-weight: 400;
-      color: var(--color-text);
+      display: flex;
+      align-items: center;
       text-decoration: none;
-      border: 1px solid var(--color-text);
-      padding: 4px 16px;
-      border-radius: 2px;
+    }
+
+    .nav__logo svg {
+      height: 24px;
+      width: auto;
     }
 
     .nav__links {
@@ -679,7 +687,7 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <a href="https://blank.no" class="nav__logo">blank</a>
+    <a href="https://blank.no" class="nav__logo"><svg width="541" height="183" viewBox="0 0 541 183" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M141.427 91.5933C146.923 89.1214 149.956 83.683 149.956 75.9705C149.956 65.0939 142.564 58.7656 129.96 58.7656H104.469V131.936H132.14C146.449 131.936 154.694 124.322 154.694 111.27C154.694 100.888 149.956 93.9664 141.427 91.5933ZM128.444 68.5546C135.457 68.5546 139.532 71.9165 139.532 77.6514C139.532 84.2763 135.646 88.1326 128.823 88.1326H115.083V68.5546H128.444ZM115.083 122.147V96.8339H129.771C138.584 96.8339 143.891 101.481 143.891 109.49C143.891 117.5 139.058 122.147 130.908 122.147H115.083Z" fill="#FFFCB6"/><path d="M216.096 131.936V122.147H183.971V58.7656H173.358V131.936H216.096Z" fill="#FFFCB6"/><path d="M292.656 131.936L267.828 58.7656H253.992L229.069 131.936H240.441L247.548 110.084H274.177L281.284 131.936H292.656ZM260.91 69.3456L270.955 100.295H250.77L260.91 69.3456Z" fill="#FFFCB6"/><path d="M352.691 113.94L320.187 58.7656H309.099V131.936H319.713V76.6627L352.501 131.936H363.304V58.7656H352.691V113.94Z" fill="#FFFCB6"/><path d="M440.262 131.936L411.738 88.0337L435.619 58.7656H422.541L395.913 92.0877V58.7656H385.299V131.936H395.913V107.513L404.726 96.6362L426.995 131.936H440.262Z" fill="#FFFCB6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M515.157 120.547C528.012 110.379 533.46 100.492 533.46 91.5C533.46 82.5085 528.012 72.6213 515.157 62.4531C502.413 52.3723 483.497 42.9587 459.448 34.9127C411.433 18.8486 344.629 8.78495 270.5 8.78495C196.371 8.78495 129.567 18.8486 81.5519 34.9127C57.5027 42.9587 38.5871 52.3723 25.8428 62.4531C12.988 72.6213 7.54007 82.5085 7.54007 91.5C7.54007 100.492 12.988 110.379 25.8428 120.547C38.5871 130.628 57.5027 140.041 81.5519 148.087C129.567 164.151 196.371 174.215 270.5 174.215C344.629 174.215 411.433 164.151 459.448 148.087C483.497 140.041 502.413 130.628 515.157 120.547ZM270.5 182C419.893 182 541 141.482 541 91.5C541 41.5182 419.893 1 270.5 1C121.107 1 0 41.5182 0 91.5C0 141.482 121.107 182 270.5 182Z" fill="#FFFCB6"/></svg></a>
     <ul class="nav__links">
       <li><a href="#tilbud">Foredrag og kurs</a></li>
       <li><a href="#kontakt">Kontakt oss</a></li>
