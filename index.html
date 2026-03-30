@@ -9,7 +9,7 @@
   <style>
     @font-face {
       font-family: 'BlankFraktur';
-      src: url('/fonts/BlankFraktur-Regular.otf') format('opentype');
+      src: url('fonts/BlankFraktur-Regular.otf') format('opentype');
       font-weight: 400;
       font-style: normal;
       font-display: swap;
@@ -64,7 +64,7 @@
     }
 
     .nav__logo svg {
-      height: 24px;
+      height: 32px;
       width: auto;
     }
 
@@ -134,9 +134,29 @@
 
     .filters__categories {
       display: flex;
-      gap: 8px;
+      gap: 0;
       list-style: none;
       flex-wrap: wrap;
+    }
+
+    .filters__categories .tag {
+      font-size: 1.75rem;
+      font-weight: 400;
+      padding: 8px 20px;
+      border: none;
+      background: transparent;
+      color: var(--color-text-muted);
+      letter-spacing: -0.01em;
+    }
+
+    .filters__categories .tag:hover {
+      color: var(--color-text);
+    }
+
+    .filters__categories .tag.active {
+      background: #0000FF;
+      color: #fff;
+      border: none;
     }
 
     .filters__subtopics {
@@ -644,7 +664,7 @@
     @media (max-width: 768px) {
       .nav { padding: 12px 24px; }
       .nav__links { display: none; }
-      .hero { padding: 0 24px 48px; }
+      .hero { padding: 96px 24px 48px; }
       .hero__stats { flex-direction: column; gap: 24px; }
       .filters { padding: 96px 24px 32px; }
       .divider { margin: 0 24px; }
